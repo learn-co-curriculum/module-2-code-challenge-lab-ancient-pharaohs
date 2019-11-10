@@ -1,0 +1,7 @@
+<h1>Ancient Pyramids of Egypt</h1>
+
+<% @pyramids.each do |pyramid| %>
+  <h3><%=pyramid.name%></h3>
+  <%=image_tag pyramid.img_url, style: "width: 40%; "%>
+  <%# display anything else you might want to display here.%>
+<% end %>
